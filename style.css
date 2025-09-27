@@ -16,7 +16,7 @@ body {
     overflow: hidden;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 100dvh;
 
 }
 
@@ -83,8 +83,8 @@ body {
     position: relative;
     color:white;
     font-size: clamp(1rem, 3vw, 30px);
-    padding: 15%;
-    margin: -3% -5% 0% 10%;
+    padding: 15% 0% 15% 15%;
+    margin: -3% 0% 0% 10%;
 
 }
 
@@ -136,29 +136,43 @@ body {
 }
 
 footer {
+    position: relative;
     background: linear-gradient(rgb(0, 0, 0), rgb(50, 50, 50));
     color: white;
     padding: 30px 0px;
-    
-}
-
-.finish {
-    display: flex;
-    position: relative;
-    font-weight: bold;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    font-family: 'Times New Roman', Times, serif;
     font-size: clamp(1rem, 3vw, 25px);
 
+    
+}
+.finish {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
 
-.tg {
-    margin: 0 20px;
-}
+@media (max-width: 768px){
+    .table {
+    margin: 0% 15%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 30px;
+    }
 
-.nickname {
-    margin: 0 20px;
+    .startup{
+        font-size: clamp(3rem, 8vw, 200px);
+    }
+
+
+    .video {
+        width: 100%;
+        min-height: 100dvh;
+    }
+
+    .blackhole {
+        margin-top: 0px;
+    }
+
+    footer {
+        font-size: clamp(0.8rem, 4vw, 20px);
+    }
 }
